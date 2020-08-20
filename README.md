@@ -1,4 +1,6 @@
-<<<<<<< HEAD
+# herpa-tracker
+Keep track of your reptile on eating habits and when to feed next.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -63,11 +65,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 ### Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
-# herpa-tracker
-Keep track of your reptile on eating habits and when to feed next.
->>>>>>> 3246fedff29b6dd58e85dfa3339ec4619425f908
