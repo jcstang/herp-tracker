@@ -1,4 +1,23 @@
 
 .App {
   text-align: center;
+  background-color: cornflowerblue;
+  min-height: 100vh;
+  color: whitesmoke;
 }
+
+h1 {
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+}
+
+.pet-container {
+  margin-bottom: 2vh;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* .card {
+  max-width: 20vw;
+} */
