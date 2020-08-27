@@ -1,4 +1,17 @@
 .card {
   max-width: 30vw;
   min-width: 20vw;
+  margin: 0.5rem;
+}
+
+.edit-btn {
+  display: flex;
+  justify-content: right;
+  color: #d9d9d9;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+.edit-btn:hover {
+  color: black;
 }
