@@ -7,36 +7,40 @@ function App() {
 
   const [petList, setPetList] = useState([
     {
-      title: 'Zelda'
+      name: 'Zelda'
     },
     {
-      title: 'Zelda'
+      name: 'Ted'
     },
     {
-      title: 'Zelda'
+      name: 'Gimli'
     },
     {
-      title: 'Zelda'
+      name: 'Dharma'
     },
     {
-      title: 'Zelda'
+      name: 'Bun-Bun'
     }
   ]);
 
   const plusBtnClicked = (event) => {
     event.preventDefault();
     console.log('plus button clicked');
+    const newList = [...petList];
+    newList.push( {name: 'Snek'} );
+    setPetList(newList);
   }
+
 
   return (
     <div className='App container-fluid'>
-      <h1>Herpa Tracker</h1>
-      <h5>A place to keep track of your reptile.</h5>
+      <h1>Herp-Tracker</h1>
+      <h5>A place to keep track of your reptiles.</h5>
 
       <div className='container pet-container'>
         {
           petList.map((pet, index) => (
-            <Card />
+            <div className="row"><Card petName={pet.name}/></div>
           ))
         }
         <div className="card">
