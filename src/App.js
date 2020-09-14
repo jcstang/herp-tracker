@@ -41,6 +41,7 @@ function App() {
     return <Loading />;
   }
 
+  // TODO: Set this up like a SPA. with a switch and routes.
   return (
     <Container className='App container-fluid'>
       <h1>Herp-Tracker</h1>
