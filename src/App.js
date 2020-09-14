@@ -43,23 +43,27 @@ function App() {
 
   // TODO: Set this up like a SPA. with a switch and routes.
   return (
-    <Container className='App container-fluid'>
-      <h1>Herp-Tracker</h1>
-      <h5>A place to keep track of your reptiles.</h5>
+    <Container id="app" className="d-flex flex-column h-100">
+      
+      <Container className='App container-fluid'>
+        <h1>Herp-Tracker</h1>
+        <h5>A place to keep track of your reptiles.</h5>
 
-      <div className='container pet-container'>
-        {petList.map((pet, index) => (
-          <div className='row'>
-            <Card petName={pet.name} />
+        <div className='container pet-container'>
+          {petList.map((pet, index) => (
+            <div className='row'>
+              <Card petName={pet.name} />
+            </div>
+          ))}
+          <div className='card'>
+            <p>Add new pet</p>
+            <a href='/' className='btn' onClick={plusBtnClicked}>
+              <i className='fas fa-plus fa-4x'></i>
+            </a>
           </div>
-        ))}
-        <div className='card'>
-          <p>Add new pet</p>
-          <a href='/' className='btn' onClick={plusBtnClicked}>
-            <i className='fas fa-plus fa-4x'></i>
-          </a>
         </div>
-      </div>
+      </Container>
+
     </Container>
   );
 }
