@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap';
 import { useAuth0 } from '@auth0/auth0-react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { Card, Loading } from './components';
+import { Card, Loading, MainPage, AppNavBar } from './components';
 // import { Home } from './views';
 
 function App() {
@@ -37,34 +37,31 @@ function App() {
   };
 
   // Loading image if busy
-  if (isLoading) {
-    return <Loading />;
-  }
+  // if (isLoading) {
+  //   return <Loading />;
+  // }
 
   // TODO: Set this up like a SPA. with a switch and routes.
   return (
-    <Container id="app" className="d-flex flex-column h-100">
-      
-      <Container className='App container-fluid'>
-        <h1>Herp-Tracker</h1>
-        <h5>A place to keep track of your reptiles.</h5>
+    <MainPage>
+      <AppNavBar />
+      <h1>Herp-Tracker</h1>
+      <h5>A place to keep track of your reptiles.</h5>
 
-        <div className='container pet-container'>
-          {petList.map((pet, index) => (
-            <div className='row'>
-              <Card petName={pet.name} />
-            </div>
-          ))}
-          <div className='card'>
-            <p>Add new pet</p>
-            <a href='/' className='btn' onClick={plusBtnClicked}>
-              <i className='fas fa-plus fa-4x'></i>
-            </a>
+      <div className='container pet-container'>
+        {petList.map((pet, index) => (
+          <div className='row'>
+            <Card petName={pet.name} />
           </div>
+        ))}
+        <div className='card'>
+          <p>Add new pet</p>
+          <a href='/' className='btn' onClick={plusBtnClicked}>
+            <i className='fas fa-plus fa-4x'></i>
+          </a>
         </div>
-      </Container>
-
-    </Container>
+      </div>
+    </MainPage>
   );
 }
 

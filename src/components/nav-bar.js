@@ -7,49 +7,49 @@ import { useAuth0 } from '@auth0/auth0-react';
 // TODO:  login button
 
 const MainNav = () => {
-
   return (
-    <Nav className="mr-auto">
-      <Nav.Link 
+    <Nav className='mr-auto'>
+      <Nav.Link
         as={RouterNavLink}
-        to="/"
+        to='/'
         exact
-        activeClassName="router-link-exact-active"
+        activeClassName='router-link-exact-active'
       >
         Home
       </Nav.Link>
       <Nav.Link
         as={RouterNavLink}
-        to="/profile"
+        to='/profile'
         exact
-        activeClassName="router-link-exact-active"
+        activeClassName='router-link-exact-active'
       >
         Profile
       </Nav.Link>
     </Nav>
   );
-}
+};
 
 const AuthNav = () => {
   const { isAuthenticated } = useAuth0();
 
   return (
-    <Nav className="justify-content-end">
-      {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+    <Nav className='justify-content-end'>
+      {/* {isAuthenticated ? <LogoutButton /> : <LoginButton />} */}
     </Nav>
   );
-}
+};
 
-const Navbar = () => {
+const AppNavBar = () => {
   return (
-    <Navbar bg="light" expand="md">
+    <Navbar bg='light' expand='md'>
       <Container>
-        <Navbar.Brand as={RouterNavLink} className="logo" to="/" />
+        <Navbar.Brand as={RouterNavLink} className='logo' to='/' />
+        <h1>Herp-Tracker</h1>
         <MainNav />
-        <AuthNav />
+        {/* <AuthNav /> */}
       </Container>
     </Navbar>
   );
-}
+};
 
-export default Navbar;
+export default AppNavBar;

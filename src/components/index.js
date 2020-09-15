@@ -4,5 +4,7 @@
 
 import Card from './Card';
 import Loading from './Loading';
+import MainPage from './MainPage';
+import AppNavBar from './nav-bar';
 
-export { Card, Loading };
+export { Card, Loading, MainPage, AppNavBar };
