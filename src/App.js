@@ -5,6 +5,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Card, Loading, MainPage, AppNavBar } from './components';
+import { Home } from './views';
 // import { Home } from './views';
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
   return (
     <MainPage>
       <AppNavBar />
+      <Switch>
+        <Route path='/' exact component={Home} />
+      </Switch>
       <h1>Herp-Tracker</h1>
       <h5>A place to keep track of your reptiles.</h5>
 
