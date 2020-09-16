@@ -3,6 +3,8 @@ import { NavLink as RouterNavLink } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
 import { useAuth0 } from '@auth0/auth0-react';
+import LoginButton from './login-button';
+import LogoutButton from './logout-button';
 // TODO:  logout button
 // TODO:  login button
 
@@ -34,7 +36,7 @@ const AuthNav = () => {
 
   return (
     <Nav className='justify-content-end'>
-      {/* {isAuthenticated ? <LogoutButton /> : <LoginButton />} */}
+      {isAuthenticated ? <LogoutButton /> : <LoginButton />}
     </Nav>
   );
 };
@@ -46,7 +48,9 @@ const AppNavBar = () => {
         <Navbar.Brand as={RouterNavLink} className='logo' to='/' />
         <h1>Herp-Tracker</h1>
         <MainNav />
-        {/* <AuthNav /> */}
+        <AuthNav />
+        {/* <LoginButton />
+        <LogoutButton /> */}
       </Container>
     </Navbar>
   );

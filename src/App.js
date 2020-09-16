@@ -18,14 +18,16 @@ function App() {
 
   // TODO: Set this up like a SPA. with a switch and routes.
   return (
-    <MainPage>
+    <>
       <AppNavBar />
-      <Container className=''>
-        <Switch>
-          <Route path='/' exact component={Home} />
-        </Switch>
-      </Container>
-    </MainPage>
+      <MainPage>
+        <Container className=''>
+          <Switch>
+            <Route path='/' exact component={Home} />
+          </Switch>
+        </Container>
+      </MainPage>
+    </>
   );
 }
 
