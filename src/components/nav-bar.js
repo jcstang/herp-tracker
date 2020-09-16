@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink as RouterNavLink } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import styles from './navbar.module.css';
 
 import { useAuth0 } from '@auth0/auth0-react';
 import LoginButton from './login-button';
@@ -44,9 +45,9 @@ const AuthNav = () => {
 const AppNavBar = () => {
   return (
     <Navbar bg='light' expand='md'>
-      <Container>
+      <Container className='d-flex justify-content-start'>
         <Navbar.Brand as={RouterNavLink} className='logo' to='/' />
-        <h1>Herp-Tracker</h1>
+        <h1 className={styles.bigblue}>Herp-Tracker</h1>
         <MainNav />
         <AuthNav />
         {/* <LoginButton />
