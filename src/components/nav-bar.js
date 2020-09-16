@@ -44,9 +44,20 @@ const AuthNav = () => {
 
 const AppNavBar = () => {
   return (
-    <Navbar bg='light' expand='md'>
-      <Container className='d-flex justify-content-start'>
-        <Navbar.Brand as={RouterNavLink} className='logo' to='/' />
+    <Navbar bg='light' expand='md' className={styles.topnav}>
+      <Container
+        className={'d-flex justify-content-start' + styles.topnav}
+        fluid
+      >
+        <Navbar.Brand as={RouterNavLink} className='logo' to='/'>
+          <img
+            src='./placeholder-logo.svg'
+            width='100'
+            height='100'
+            className='d-inline-block align-top'
+            alt='React Bootstrap logo'
+          />
+        </Navbar.Brand>
         <h1 className={styles.bigblue}>Herp-Tracker</h1>
         <MainNav />
         <AuthNav />

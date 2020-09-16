@@ -3,4 +3,10 @@
   padding: 40px;
   font-family: Arial;
   text-align: center;
+  padding-left: 0.1vw;
+  padding-right: 0.1vw;
+}
+
+.topnav {
+  margin-left: 0px;
 }
