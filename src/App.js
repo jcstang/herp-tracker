@@ -1,57 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import { useAuth0 } from '@auth0/auth0-react';
 import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Card from './component/Card';
+import { Loading, MainPage, AppNavBar } from './components';
+
+import { Home, Profile } from './views';
 
 function App() {
+  const { isLoading } = useAuth0();
 
-  const [petList, setPetList] = useState([
-    {
-      name: 'Zelda'
-    },
-    {
-      name: 'Ted'
-    },
-    {
-      name: 'Gimli'
-    },
-    {
-      name: 'Dharma'
-    },
-    {
-      name: 'Bun-Bun'
-    }
-  ]);
+  // ** uncomment this for loading circle
+  // Loading image if busy
+  // if (isLoading) {
+  //   return <Loading />;
+  // }
 
-  const plusBtnClicked = (event) => {
-    event.preventDefault();
-    console.log('plus button clicked');
-    const newList = [...petList];
-    newList.push( {name: 'Snek'} );
-    setPetList(newList);
-  }
-
-
+  // TODO: Set this up like a SPA. with a switch and routes.
   return (
-    <div className='App container-fluid'>
-      <h1>Herp-Tracker</h1>
-      <h5>A place to keep track of your reptiles.</h5>
-
-      <div className='container pet-container'>
-        {
-          petList.map((pet, index) => (
-            <div className="row"><Card petName={pet.name}/></div>
-          ))
-        }
-        <div className="card">
-          <p>Add new pet</p>
-          <a href="/" className="btn" onClick={plusBtnClicked}>
-            <i className="fas fa-plus fa-4x"></i>
-          </a>
-        </div>
-      </div>
-
-    </div>
+    <>
+      <AppNavBar />
+      <MainPage>
+        <Container className=''>
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/profile' exact component={Profile} />
+          </Switch>
+        </Container>
+      </MainPage>
+    </>
   );
 }
 
