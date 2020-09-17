@@ -51,11 +51,6 @@ const Home = (props) => {
           <AddIcon />
         </Button>
       </Container>
-      {/* <div className='container'> */}
-      {/* </div>{' '} */}
-      {/* pet-container */}
-      {/* </div>{' '} */}
-      {/* div container */}
     </>
   );
 };

@@ -15,7 +15,6 @@ function App() {
     return <Loading />;
   }
 
-  // TODO: Set this up like a SPA. with a switch and routes.
   return (
     <>
       <AppNavBar />
