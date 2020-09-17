@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import { Card } from '../components';
+import Fab from '@material-ui/core/Fab';
+import AddIcon from '@material-ui/icons/Add';
 
 const Home = (props) => {
   const [petList, setPetList] = useState([
@@ -31,21 +33,23 @@ const Home = (props) => {
 
   return (
     <>
-      <Container className='' fluid>
-        <h1>Herp-Tracker</h1>
-        <h5>A place to keep track of your reptiles.</h5>
-        {/* <div className='container pet-container'> */}
-        <div className='pet-container container-fluid'>
-          {petList.map((pet, index) => (
-            <Card petName={pet.name} key={index} />
-          ))}
-          <div className='card'>
-            <p>Add new pet</p>
-            <a href='/' className='btn' onClick={plusBtnClicked}>
-              <i className='fas fa-plus fa-4x'></i>
-            </a>
-          </div>
+      <Container className='pet-container' fluid>
+        <div className='card'>
+          <p>Add new pet</p>
+          <a href='/' className='btn' onClick={plusBtnClicked}>
+            <i className='fas fa-plus fa-4x'></i>
+          </a>
         </div>
+        {petList.map((pet, index) => (
+          <Card petName={pet.name} key={index} />
+        ))}
+
+        <Fab color='secondary' aria-label='add' onClick={plusBtnClicked}>
+          <AddIcon />
+        </Fab>
+        <Button className='my-float-button' variant='warning'>
+          <AddIcon />
+        </Button>
       </Container>
       {/* <div className='container'> */}
       {/* </div>{' '} */}
