@@ -10,7 +10,6 @@ import { Home, Profile } from './views';
 function App() {
   const { isLoading } = useAuth0();
 
-  // ** uncomment this for loading circle
   // Loading image if busy
   if (isLoading) {
     return <Loading />;
