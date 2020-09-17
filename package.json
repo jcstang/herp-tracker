@@ -1,7 +1,7 @@
 {
   "name": "herpa-tracker",
   "version": "0.1.0",
-  "homepage": "https://jcstang.github.io/herp-tracker",
+  "homepage": "https://jcstang.github.io/herp-tracker/",
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.0.0",
