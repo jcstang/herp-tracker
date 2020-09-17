@@ -12,9 +12,9 @@ function App() {
 
   // ** uncomment this for loading circle
   // Loading image if busy
-  // if (isLoading) {
-  //   return <Loading />;
-  // }
+  if (isLoading) {
+    return <Loading />;
+  }
 
   // TODO: Set this up like a SPA. with a switch and routes.
   return (
