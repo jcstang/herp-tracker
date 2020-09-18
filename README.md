@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/jcstang/herp-tracker.svg?branch=master)](https://travis-ci.org/jcstang/herp-tracker)
+
 # Herp Tracker
 Keep track of your reptile on eating habits and when to feed next.
 
