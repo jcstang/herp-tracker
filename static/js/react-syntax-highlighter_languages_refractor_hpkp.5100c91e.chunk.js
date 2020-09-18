@@ -1,2 +1,0 @@
-(this["webpackJsonpherpa-tracker"]=this["webpackJsonpherpa-tracker"]||[]).push([[82],{248:function(a,e,t){"use strict";function r(a){a.languages.hpkp={directive:{pattern:/\b(?:(?:includeSubDomains|preload|strict)(?: |;)|pin-sha256="[a-zA-Z\d+=/]+"|(?:max-age|report-uri)=|report-to )/,alias:"keyword"},safe:{pattern:/\b\d{7,}\b/,alias:"selector"},unsafe:{pattern:/\b\d{1,6}\b/,alias:"function"}}}a.exports=r,r.displayName="hpkp",r.aliases=[]}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_refractor_hpkp.5100c91e.chunk.js.map
