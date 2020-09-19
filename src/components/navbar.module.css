@@ -1,10 +1,12 @@
 .bigblue {
   color: DodgerBlue;
-  padding: 40px;
   font-family: Arial;
   text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   padding-left: 0.1vw;
-  padding-right: 0.1vw;
+  padding-right: 0.2vw;
+  margin-right: 1vw;
 }
 
 .topnav {

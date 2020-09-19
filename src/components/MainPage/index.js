@@ -1,10 +1,11 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const MainPage = (props) => {
   return (
-    <div className='App container-fluid'>
+    <Container className='App' fluid>
       {props.children}
-    </div>
+    </Container>
   );
 };
 

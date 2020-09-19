@@ -6,8 +6,6 @@ import styles from './navbar.module.css';
 import { useAuth0 } from '@auth0/auth0-react';
 import LoginButton from './login-button';
 import LogoutButton from './logout-button';
-// TODO:  logout button
-// TODO:  login button
 
 const MainNav = () => {
   return (
@@ -52,17 +50,15 @@ const AppNavBar = () => {
         <Navbar.Brand as={RouterNavLink} className='logo' to='/'>
           <img
             src='placeholder-logo.svg'
-            width='100'
-            height='100'
+            width='80'
+            height='80'
             className='d-inline-block align-top'
             alt='React Bootstrap logo'
           />
         </Navbar.Brand>
         <h1 className={styles.bigblue}>Herp-Tracker-test</h1>
         <MainNav />
-        <AuthNav />
-        {/* <LoginButton />
-        <LogoutButton /> */}
+        <AuthNav /> {/* decide whether to give a login or logout button */}
       </Container>
     </Navbar>
   );

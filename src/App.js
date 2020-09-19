@@ -19,12 +19,10 @@ function App() {
     <>
       <AppNavBar />
       <MainPage>
-        <Container className=''>
-          <Switch>
-            <Route path='/' component={Home} />
-            <Route path='/profile' exact component={Profile} />
-          </Switch>
-        </Container>
+        <Switch>
+          <Route path='/' component={Home} />
+          <Route path='/profile' exact component={Profile} />
+        </Switch>
       </MainPage>
     </>
   );
