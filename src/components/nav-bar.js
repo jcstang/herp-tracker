@@ -51,14 +51,14 @@ const AppNavBar = () => {
       >
         <Navbar.Brand as={RouterNavLink} className='logo' to='/'>
           <img
-            src='./placeholder-logo.svg'
+            src='placeholder-logo.svg'
             width='100'
             height='100'
             className='d-inline-block align-top'
             alt='React Bootstrap logo'
           />
         </Navbar.Brand>
-        <h1 className={styles.bigblue}>Herp-Tracker</h1>
+        <h1 className={styles.bigblue}>Herp-Tracker-test</h1>
         <MainNav />
         <AuthNav />
         {/* <LoginButton />
