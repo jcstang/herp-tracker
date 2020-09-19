@@ -21,7 +21,7 @@ function App() {
       <MainPage>
         <Container className=''>
           <Switch>
-            <Route path='/' exact component={Home} />
+            <Route path='/' component={Home} />
             <Route path='/profile' exact component={Profile} />
           </Switch>
         </Container>

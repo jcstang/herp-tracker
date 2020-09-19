@@ -21,6 +21,11 @@
       "src": "logo-13.svg",
       "type": "image/svg",
       "sizes": "200x200"
+    },
+    {
+      "src": "placeholder-logo.svg",
+      "type": "image/svg",
+      "sizes": "200x200"
     }
   ],
   "start_url": ".",
