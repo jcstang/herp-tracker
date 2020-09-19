@@ -33,13 +33,7 @@ const Home = (props) => {
 
   return (
     <>
-      <Container className='pet-container' fluid>
-        <div className='card'>
-          <p>Add new pet</p>
-          <a href='/' className='btn' onClick={plusBtnClicked}>
-            <i className='fas fa-plus fa-4x'></i>
-          </a>
-        </div>
+      <Container className='pet-container row' fluid>
         {petList.map((pet, index) => (
           <Card petName={pet.name} key={index} />
         ))}
