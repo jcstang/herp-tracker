@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Button } from 'react-bootstrap';
+import { Container, Col, Button, Row, Card as BootCard } from 'react-bootstrap';
 import { Card } from '../components';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
@@ -33,18 +33,33 @@ const Home = (props) => {
 
   return (
     <>
-      <Container className='pet-container row' fluid>
+      <Container className='pet-container' fluid>
+        <Container>
+          <Row>
+            <Col sm={8} style={{ border: '2px solid pink' }}>
+              sm=8
+            </Col>
+            <Col sm={4} style={{ border: '2px solid red' }}>
+              sm=4
+            </Col>
+          </Row>
+          <Row>
+            <Col sm style={{ border: '2px solid green' }}>
+              sm=true
+            </Col>
+            <Col sm style={{ border: '2px solid orange' }}>
+              sm=true
+            </Col>
+            <Col sm style={{ border: '2px solid purple' }}>
+              sm=true
+            </Col>
+          </Row>
+        </Container>
+
+        {/* next section of card list */}
         {petList.map((pet, index) => (
           <Card petName={pet.name} key={index} />
         ))}
-
-        <Fab
-          color='secondary'
-          aria-label='add'
-          onClick={() => plusBtnClicked(petList, setPetList)}
-        >
-          <AddIcon />
-        </Fab>
         <Button className='my-float-button' variant='warning'>
           <AddIcon />
         </Button>
