@@ -5,7 +5,7 @@ import { Col, Card as BootCard, Button, Row } from 'react-bootstrap';
 
 function Card(props) {
   return (
-    <Col sm>
+    <Col sm={6}>
       <BootCard>
         <BootCard.Body>
           <Button>
