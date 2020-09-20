@@ -32,39 +32,39 @@ const Home = (props) => {
   };
 
   return (
-    <>
-      <Container className='pet-container' fluid>
-        <Container>
-          <Row>
-            <Col sm={8} style={{ border: '2px solid pink' }}>
-              sm=8
-            </Col>
-            <Col sm={4} style={{ border: '2px solid red' }}>
-              sm=4
-            </Col>
-          </Row>
-          <Row>
-            <Col sm style={{ border: '2px solid green' }}>
-              sm=true
-            </Col>
-            <Col sm style={{ border: '2px solid orange' }}>
-              sm=true
-            </Col>
-            <Col sm style={{ border: '2px solid purple' }}>
-              sm=true
-            </Col>
-          </Row>
-        </Container>
+    <Container className='pet-container' fluid>
+      <Container>
+        <Row>
+          <Col sm={8} style={{ border: '2px solid pink' }}>
+            sm=8
+          </Col>
+          <Col sm={4} style={{ border: '2px solid red' }}>
+            sm=4
+          </Col>
+        </Row>
+        <Row>
+          <Col sm style={{ border: '2px solid green' }}>
+            sm=true
+          </Col>
+          <Col sm style={{ border: '2px solid orange' }}>
+            sm=true
+          </Col>
+          <Col sm style={{ border: '2px solid purple' }}>
+            sm=true
+          </Col>
+        </Row>
+      </Container>
 
-        {/* next section of card list */}
+      {/* next section of card list */}
+      <Row>
         {petList.map((pet, index) => (
           <Card petName={pet.name} key={index} />
         ))}
-        <Button className='my-float-button' variant='warning'>
-          <AddIcon />
-        </Button>
-      </Container>
-    </>
+      </Row>
+      <Button className='my-float-button' variant='warning'>
+        <AddIcon />
+      </Button>
+    </Container>
   );
 };
 
