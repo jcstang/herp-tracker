@@ -1,2 +1,0 @@
-(this["webpackJsonpherpa-tracker"]=this["webpackJsonpherpa-tracker"]||[]).push([[104],{267:function(n,s,a){"use strict";var e=a(47);function t(n){n.register(e),n.languages.jsonp=n.languages.extend("json",{punctuation:/[{}[\]();,.]/}),n.languages.insertBefore("jsonp","punctuation",{function:/[_$a-zA-Z\xA0-\uFFFF][$\w\xA0-\uFFFF]*(?=\s*\()/})}n.exports=t,t.displayName="jsonp",t.aliases=[]}}]);
-//# sourceMappingURL=react-syntax-highlighter_languages_refractor_jsonp.66afe99b.chunk.js.map
