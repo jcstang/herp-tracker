@@ -1,11 +1,10 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
 import { useAuth0 } from '@auth0/auth0-react';
 import './App.css';
 import { Loading, MainPage, AppNavBar } from './components';
 
-import { Home, Profile, Mobile } from './views';
+import { Profile, Mobile } from './views';
 
 function App() {
   const { isLoading } = useAuth0();
