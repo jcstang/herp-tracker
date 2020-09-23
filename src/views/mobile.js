@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { Container, Col, Button, Row, Card as BootCard } from 'react-bootstrap';
+import { Container, Col, Button, Row } from 'react-bootstrap';
 import { Card } from '../components';
-import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 
 const Home = (props) => {
@@ -61,7 +60,12 @@ const Home = (props) => {
           <Card petName={pet.name} key={index} />
         ))}
       </Row>
-      <Button className='my-float-button' variant='warning'>
+      {/* Floating action button */}
+      <Button
+        className='my-float-button'
+        variant='warning'
+        onClick={plusBtnClicked}
+      >
         <AddIcon />
       </Button>
     </Container>

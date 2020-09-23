@@ -56,7 +56,7 @@ const AppNavBar = () => {
             alt='React Bootstrap logo'
           />
         </Navbar.Brand>
-        <h1 className={styles.bigblue}>Herp-Tracker-test</h1>
+        {/* <h1 className={styles.bigblue}>Herp-Tracker-test</h1> */}
         <MainNav />
         <AuthNav /> {/* decide whether to give a login or logout button */}
       </Container>
