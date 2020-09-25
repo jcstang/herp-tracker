@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Container, Col, Button, Row } from 'react-bootstrap';
 import { Card } from '../components';
 import AddIcon from '@material-ui/icons/Add';
+import { DatePicker, Button as AntButton } from 'antd';
+import 'antd/dist/antd.css';
 
 const Home = (props) => {
   const [petList, setPetList] = useState([
@@ -60,6 +62,8 @@ const Home = (props) => {
           <Card petName={pet.name} key={index} />
         ))}
       </Row>
+      <DatePicker />
+      <AntButton type='primary'>Button</AntButton>
       {/* Floating action button */}
       <Button
         className='my-float-button'
