@@ -1,0 +1,2 @@
+(this["webpackJsonpherp-tracker"]=this["webpackJsonpherp-tracker"]||[]).push([[219],{454:function(e,a,t){"use strict";function n(e){!function(e){function a(a,t){e.languages[a]&&e.languages.insertBefore(a,"comment",{"doc-comment":t})}var t=e.languages.markup.tag,n={pattern:/\/\/\/.*/,greedy:!0,alias:"comment",inside:{tag:t}},s={pattern:/'''.*/,greedy:!0,alias:"comment",inside:{tag:t}};a("csharp",n),a("fsharp",n),a("vbnet",s)}(e)}e.exports=n,n.displayName="xmlDoc",n.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_xmlDoc.f34f6643.chunk.js.map

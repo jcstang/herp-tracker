@@ -1,0 +1,2 @@
+(this["webpackJsonpherp-tracker"]=this["webpackJsonpherp-tracker"]||[]).push([[13],{269:function(e,t,a){"use strict";function r(e){e.languages.arff={comment:/%.*/,string:{pattern:/(["'])(?:\\.|(?!\1)[^\\\r\n])*\1/,greedy:!0},keyword:/@(?:attribute|data|end|relation)\b/i,number:/\b\d+(?:\.\d+)?\b/,punctuation:/[{},]/}}e.exports=r,r.displayName="arff",r.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_arff.78be5b84.chunk.js.map
