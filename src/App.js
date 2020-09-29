@@ -4,7 +4,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 import './App.css';
 import { Loading, MainPage, AppNavBar } from './components';
 
-import { Profile, Mobile } from './views';
+import { Profile, Home } from './views';
 
 function App() {
   const { isLoading } = useAuth0();
@@ -19,7 +19,7 @@ function App() {
       <AppNavBar />
       <MainPage>
         <Switch>
-          <Route path='/' component={Mobile} />
+          <Route path='/' component={Home} />
           <Route path='/profile' exact component={Profile} />
         </Switch>
       </MainPage>
